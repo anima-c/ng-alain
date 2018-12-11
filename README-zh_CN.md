@@ -10,7 +10,7 @@ Ng Alain
 
 <div align="center">
 
-  Out-of-box UI solution for enterprise applications, Let developers focus on business.
+  一个基于 Antd 中后台前端解决方案，提供更多通用性业务模块，让开发者更加专注于业务。
 
   [![Build Status](https://travis-ci.org/ng-alain/ng-alain.svg?branch=master)](https://travis-ci.org/ng-alain/ng-alain)
   [![Dependency Status](https://david-dm.org/ng-alain/ng-alain/status.svg)](https://david-dm.org/ng-alain/ng-alain)
@@ -26,64 +26,64 @@ Ng Alain
 
 </div>
 
-English | [简体中文](README-zh_CN.md)
+[English](README.md) | 简体中文
 
-## Quick start
+## 快速入门
 
 ```bash
-# Make sure you are using the latest version of Angular cli
+# 确保使用的是最新版本 Angular cli
 ng new demo --style less
 cd demo
 ng add ng-alain
 ng serve
-# or hmr mode
-npm run hmr
 ```
 
-> Please refer to [Cli](https://ng-alain.com/cli) for more details.
+> 请参考[命令行工具](https://ng-alain.com/cli)了解更多细节。
 >
-> [vscode] recommended install [ng-zorro-vscode](https://marketplace.visualstudio.com/items?itemName=cipchk.ng-zorro-vscode) & [ng-alain-vscode](https://marketplace.visualstudio.com/items?itemName=cipchk.ng-alain-vscode) plugins.
+> [vscode] 建议安装 [ng-zorro-vscode](https://marketplace.visualstudio.com/items?itemName=cipchk.ng-zorro-vscode) 和 [ng-alain-vscode](https://marketplace.visualstudio.com/items?itemName=cipchk.ng-alain-vscode) 插件，开发更爽。
 
-## Links
 
-+ [Document](https://ng-alain.com)
+## 链接
+
++ [文档](https://ng-alain.com)
++ [@delon](https://github.com/ng-alain/delon)
 + [DEMO](https://ng-alain.github.io/ng-alain/)
 
-## Features
+## 特性
 
-+ `ng-zorro-antd` based
-+ Responsive Layout
-+ I18n
-+ [@delon](https://github.com/ng-alain/delon)
-+ Lazy load Assets
-+ UI Router States
-+ Customize Theme
-+ Less preprocessor
-+ Well organized & commented code
-+ Simple upgrade
-+ Support Docker deploy
++ 基于 `ng-zorro-antd`
++ 响应式
++ 国际化
++ 基建类库 [@delon](https://github.com/ng-alain/delon)（包括：业务组件、ACL访问控制、缓存、授权、动态表单等）
++ 延迟加载及良好的启用画面
++ 良好的UI路由设计
++ 定制主题
++ Less预编译
++ 良好的目录组织结构
++ 简单升级
++ 支持Docker部署
 
 ## Architecture
 
 ![Architecture](https://raw.githubusercontent.com/ng-alain/delon/master/_screenshot/architecture.png)
 
-> [delon](https://github.com/ng-alain/delon) is a production-ready solution for admin business components packages, Built on the design principles developed by Ant Design.
+> [delon](https://github.com/ng-alain/delon) 是基于 Ant Design 设计理念的企业级中后台前端业务型组件库。
 
-## App Shots
+## 应用截图
 
 ![desktop](https://raw.githubusercontent.com/ng-alain/delon/master/_screenshot/desktop.png)
 ![ipad](https://raw.githubusercontent.com/ng-alain/delon/master/_screenshot/ipad.png)
 ![iphone](https://raw.githubusercontent.com/ng-alain/delon/master/_screenshot/iphone.png)
 
-## Donation
+## 赞助
 
-ng-alain is an MIT-licensed open source project. In order to achieve better and sustainable development of the project, we expect to gain more backers. You can support us in any of the following ways:
+ng-alain是MIT协议的开源项目。为了项目能够更好的持续的发展，我们期望获得更多的支持者，你可以通过如下任何一种方式支持我们：
 
 - [opencollective](https://opencollective.com/ng-alain)
 - [paypal](https://www.paypal.me/cipchk)
 - [支付宝或微信](https://ng-alain.com/assets/donate.png)
 
-Or purchasing our [business theme](https://e.ng-alain.com/).
+或购买我们 [商品主题](https://e.ng-alain.com/)。
 
 ## Backers
 

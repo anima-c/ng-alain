@@ -1,0 +1,21 @@
+<page-header></page-header>
+
+<h3>可互相拖动</h3>
+<div nz-row nzType="flex" nzJustify="space-around" class="my-md">
+  <div nz-col nzSpan="11" class="dragula-container" dragula="VAMPIRES" [dragulaModel]="vamps">
+    <div class="my-md dragula-item" *ngFor="let item of vamps">{{item.name}}</div>
+  </div>
+  <div nz-col nzSpan="11" class="dragula-container" dragula="VAMPIRES" [(dragulaModel)]="vamps2">
+    <div class="my-md dragula-item" *ngFor="let item of vamps">{{item.name}}</div>
+  </div>
+</div>
+
+<h3>不可互相拖动</h3>
+<div nz-row nzType="flex" nzJustify="space-around" class="my-md">
+  <div nz-col nzSpan="11" class="dragula-container" dragula="VAMPIRES-1" [dragulaModel]="vamps">
+    <div class="my-md dragula-item" *ngFor="let item of vamps">{{item.name}}</div>
+  </div>
+  <div nz-col nzSpan="11" class="dragula-container" dragula="VAMPIRES-2" [(dragulaModel)]="vamps2">
+    <div class="my-md dragula-item" *ngFor="let item of vamps">{{item.name}}</div>
+  </div>
+</div>

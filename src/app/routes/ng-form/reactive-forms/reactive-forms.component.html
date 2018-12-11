@@ -1,0 +1,94 @@
+<page-header></page-header>
+响应式表单
+<form nz-form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <nz-form-item>
+    <nz-form-label nzSpan="4">First Name</nz-form-label>
+    <nz-form-control nzSpan="8">
+      <input nz-input type="text" [formControlName]="'firstName'" required />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label nzSpan="4">Last Name</nz-form-label>
+    <nz-form-control nzSpan="8">
+      <input nz-input type="text" [formControlName]="'lastName'" />
+    </nz-form-control>
+  </nz-form-item>
+  <div [formGroupName]="'address'">
+    <h3>Address</h3>
+    <nz-form-item>
+      <nz-form-label nzSpan="4">Street</nz-form-label>
+      <nz-form-control nzSpan="8">
+        <input nz-input type="text" [formControlName]="'street'" />
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzSpan="4">City</nz-form-label>
+      <nz-form-control nzSpan="8">
+        <input nz-input type="text" [formControlName]="'city'" />
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzSpan="4">State</nz-form-label>
+      <nz-form-control nzSpan="8">
+        <input nz-input type="text" [formControlName]="'state'" />
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label nzSpan="4">Zip Code</nz-form-label>
+      <nz-form-control nzSpan="8">
+        <input nz-input type="text" [formControlName]="'zip'" />
+      </nz-form-control>
+    </nz-form-item>
+  </div>
+  <div [formArrayName]="'aliases'">
+    <h3>Aliases</h3>
+    <div *ngFor="let item of aliases.controls; let i = index">
+      <nz-form-item>
+        <nz-form-label nzSpan="4">Alias</nz-form-label>
+        <nz-form-control nzSpan="8">
+          <input nz-input type="text" [formControlName]="i" />
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+    <nz-form-item>
+      <nz-form-control nzOffset="4">
+        <button nz-button type="button" (click)="addAlias()">Add Alias</button>
+      </nz-form-control>
+    </nz-form-item>
+  </div>
+  <div [formArrayName]="'items'">
+    <h3>Items</h3>
+    <div *ngFor="let item of items.controls; let i = index">
+      <div [formGroupName]="i">
+        <nz-form-item>
+          <nz-form-label nzSpan="4">item1</nz-form-label>
+          <nz-form-control nzSpan="8">
+            <input nz-input type="text" [formControlName]="'item1'" />
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzSpan="4">item2</nz-form-label>
+          <nz-form-control nzSpan="8">
+            <input nz-input type="text" [formControlName]="'item2'" />
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+    </div>
+    <nz-form-item>
+      <nz-form-control nzOffset="4">
+        <button nz-button type="button" (click)="addItems()">Add Items</button>
+      </nz-form-control>
+    </nz-form-item>
+  </div>
+  <nz-form-item>
+    <nz-form-control nzOffset="4">
+      <button nz-button type="button" (click)="updateProfile()">
+        Update Profile
+      </button>
+      <button nz-button type="submit" [disabled]="!profileForm.valid">
+        Submit
+      </button>
+    </nz-form-control>
+  </nz-form-item>
+  <p>{{ profileForm.value | json }}</p>
+</form>
