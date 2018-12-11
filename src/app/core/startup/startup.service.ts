@@ -117,7 +117,10 @@ export class StartupService {
             text: '表单',
             icon: { type: 'icon', value: 'form' },
             shortcutRoot: true,
-            children: [{ text: '响应式表单', link: '/ng-form/reactive-forms' }],
+            children: [
+              { text: 'zorro响应式表单', link: '/ng-form/reactive-forms' },
+              { text: '模板驱动表单', link: '/ng-form/template-form' },
+            ],
           },
         ],
       },
