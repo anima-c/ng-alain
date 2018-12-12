@@ -124,6 +124,7 @@ export class StartupService {
                 text: 'zorro响应式表单',
                 link: '/ng-form/zorro-reactive-forms',
               },
+              { text: '表单验证', link: '/ng-form/validation' },
             ],
           },
         ],

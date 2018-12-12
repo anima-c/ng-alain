@@ -1,0 +1,8 @@
+<form #heroForm="ngForm">
+  <input type="text" id="name" class="form-control" required minlength="4" name="name" [(ngModel)]="hero.name" #name="ngModel">
+  <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+    <div *ngIf="name.hasError('required')">Name is required</div>
+    <div *ngIf="name.hasError('minlength')">Name must be at least 4 characters long</div>
+    <!-- <div *ngIf="name.hasError('')"></div> -->
+  </div>
+</form>
