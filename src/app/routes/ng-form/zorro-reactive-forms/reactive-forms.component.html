@@ -1,4 +1,5 @@
 <page-header></page-header>
+
 <form nz-form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
   <nz-form-item>
     <nz-form-label nzSpan="4">First Name</nz-form-label>
@@ -6,12 +7,14 @@
       <input nz-input type="text" [formControlName]="'firstName'" required />
     </nz-form-control>
   </nz-form-item>
+
   <nz-form-item>
     <nz-form-label nzSpan="4">Last Name</nz-form-label>
     <nz-form-control nzSpan="8">
       <input nz-input type="text" [formControlName]="'lastName'" />
     </nz-form-control>
   </nz-form-item>
+
   <div [formGroupName]="'address'">
     <h3>Address</h3>
     <nz-form-item>
@@ -20,18 +23,21 @@
         <input nz-input type="text" [formControlName]="'street'" />
       </nz-form-control>
     </nz-form-item>
+
     <nz-form-item>
       <nz-form-label nzSpan="4">City</nz-form-label>
       <nz-form-control nzSpan="8">
         <input nz-input type="text" [formControlName]="'city'" />
       </nz-form-control>
     </nz-form-item>
+
     <nz-form-item>
       <nz-form-label nzSpan="4">State</nz-form-label>
       <nz-form-control nzSpan="8">
         <input nz-input type="text" [formControlName]="'state'" />
       </nz-form-control>
     </nz-form-item>
+
     <nz-form-item>
       <nz-form-label nzSpan="4">Zip Code</nz-form-label>
       <nz-form-control nzSpan="8">
@@ -39,6 +45,7 @@
       </nz-form-control>
     </nz-form-item>
   </div>
+  
   <div [formArrayName]="'aliases'">
     <h3>Aliases</h3>
     <div *ngFor="let item of aliases.controls; let i = index">
@@ -49,12 +56,14 @@
         </nz-form-control>
       </nz-form-item>
     </div>
+
     <nz-form-item>
       <nz-form-control nzOffset="4">
         <button nz-button type="button" (click)="addAlias()">Add Alias</button>
       </nz-form-control>
     </nz-form-item>
   </div>
+
   <div [formArrayName]="'items'">
     <h3>Items</h3>
     <div *ngFor="let item of items.controls; let i = index">
@@ -65,6 +74,7 @@
             <input nz-input type="text" [formControlName]="'item1'" />
           </nz-form-control>
         </nz-form-item>
+
         <nz-form-item>
           <nz-form-label nzSpan="4">item2</nz-form-label>
           <nz-form-control nzSpan="8">
@@ -73,12 +83,14 @@
         </nz-form-item>
       </div>
     </div>
+
     <nz-form-item>
       <nz-form-control nzOffset="4">
         <button nz-button type="button" (click)="addItems()">Add Items</button>
       </nz-form-control>
     </nz-form-item>
   </div>
+
   <nz-form-item>
     <nz-form-control nzOffset="4">
       <button nz-button type="button" (click)="updateProfile()">

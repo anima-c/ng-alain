@@ -1,12 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { _HttpClient } from '@delon/theme';
-import { FormControl, FormGroup, FormBuilder, FormArray, Validators } from '@angular/forms';
+import {
+  FormControl,
+  FormGroup,
+  FormBuilder,
+  FormArray,
+  Validators,
+} from '@angular/forms';
 
 @Component({
-  selector: 'app-ng-form-reactive-forms',
+  selector: 'app-ng-form-zorro-reactive-forms',
   templateUrl: './reactive-forms.component.html',
 })
-export class NgFormReactiveFormsComponent implements OnInit {
+export class NgFormZorroReactiveFormsComponent implements OnInit {
   profileForm = this.fb.group({
     firstName: [''],
     lastName: ['', [Validators.required]],

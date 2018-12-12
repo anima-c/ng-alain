@@ -98,7 +98,7 @@ export class StartupService {
         group: true,
         children: [
           {
-            text: '仪表盘',
+            text: '首页',
             link: '/dashboard',
             icon: { type: 'icon', value: 'appstore' },
           },
@@ -118,8 +118,12 @@ export class StartupService {
             icon: { type: 'icon', value: 'form' },
             shortcutRoot: true,
             children: [
-              { text: 'zorro响应式表单', link: '/ng-form/reactive-forms' },
+              { text: '响应式表单', link: '/ng-form/reactive-forms' },
               { text: '模板驱动表单', link: '/ng-form/template-form' },
+              {
+                text: 'zorro响应式表单',
+                link: '/ng-form/zorro-reactive-forms',
+              },
             ],
           },
         ],

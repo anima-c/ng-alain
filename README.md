@@ -29,6 +29,10 @@ Ng Alain
 English | [简体中文](README-zh_CN.md)
 
 ## Quick start
+git clone
+cd demo
+npm install
+ng serve
 
 ```bash
 # Make sure you are using the latest version of Angular cli

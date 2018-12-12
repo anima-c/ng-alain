@@ -19,6 +19,7 @@ export class DashboardComponent implements OnInit {
     const map = new AMap.Map('AMapContainer', {
       resizeEnable: true,
       zoom: 0,
+      // lang: 'zh_en',
     });
     this.map = map;
   }
