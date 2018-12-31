@@ -127,6 +127,12 @@ export class StartupService {
               { text: '表单验证', link: '/ng-form/validation' },
             ],
           },
+          {
+            text: '颜色选择器',
+            icon: { type: 'icon', value: 'bg-colors' },
+            shortcutRoot: true,
+            children: [{ text: 'color-picker', link: '/color/color-picker' }],
+          },
         ],
       },
     ]);
