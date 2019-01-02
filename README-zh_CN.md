@@ -75,7 +75,7 @@ ng serve
 ![ipad](https://raw.githubusercontent.com/ng-alain/delon/master/_screenshot/ipad.png)
 ![iphone](https://raw.githubusercontent.com/ng-alain/delon/master/_screenshot/iphone.png)
 
-## 赞助
+<!-- ## 赞助
 
 ng-alain是MIT协议的开源项目。为了项目能够更好的持续的发展，我们期望获得更多的支持者，你可以通过如下任何一种方式支持我们：
 
@@ -83,7 +83,7 @@ ng-alain是MIT协议的开源项目。为了项目能够更好的持续的发展
 - [paypal](https://www.paypal.me/cipchk)
 - [支付宝或微信](https://ng-alain.com/assets/donate.png)
 
-或购买我们 [商品主题](https://e.ng-alain.com/)。
+或购买我们 [商品主题](https://e.ng-alain.com/)。 -->
 
 ## Backers
 

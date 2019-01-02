@@ -79,7 +79,7 @@ npm run hmr
 ![ipad](https://raw.githubusercontent.com/ng-alain/delon/master/_screenshot/ipad.png)
 ![iphone](https://raw.githubusercontent.com/ng-alain/delon/master/_screenshot/iphone.png)
 
-## Donation
+<!-- ## Donation
 
 ng-alain is an MIT-licensed open source project. In order to achieve better and sustainable development of the project, we expect to gain more backers. You can support us in any of the following ways:
 
@@ -87,7 +87,7 @@ ng-alain is an MIT-licensed open source project. In order to achieve better and 
 - [paypal](https://www.paypal.me/cipchk)
 - [支付宝或微信](https://ng-alain.com/assets/donate.png)
 
-Or purchasing our [business theme](https://e.ng-alain.com/).
+Or purchasing our [business theme](https://e.ng-alain.com/). -->
 
 ## Backers
 
