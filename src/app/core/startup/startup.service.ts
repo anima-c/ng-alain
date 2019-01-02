@@ -108,7 +108,7 @@ export class StartupService {
           //   shortcutRoot: true,
           // },
           {
-            text: '拖放',
+            text: '拖动',
             icon: { type: 'icon', value: 'drag' },
             shortcutRoot: true,
             children: [{ text: 'sample', link: '/dragula/sample' }],

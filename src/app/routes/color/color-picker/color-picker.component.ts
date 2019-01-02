@@ -6,9 +6,9 @@ import { _HttpClient } from '@delon/theme';
   templateUrl: './color-picker.component.html',
 })
 export class ColorColorPickerComponent implements OnInit {
+  color = '#000';
 
-  constructor(private http: _HttpClient) { }
+  constructor(private http: _HttpClient) {}
 
-  ngOnInit() { }
-
+  ngOnInit() {}
 }
