@@ -133,6 +133,12 @@ export class StartupService {
             shortcutRoot: true,
             children: [{ text: 'color-picker', link: '/color/color-picker' }],
           },
+          {
+            text: '验证器',
+            icon: { type: 'icon', value: 'sync' },
+            shortcutRoot: true,
+            children: [{ text: '随机验证码', link: '/verifier/random-code' }],
+          },
         ],
       },
     ]);

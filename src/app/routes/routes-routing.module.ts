@@ -42,6 +42,10 @@ const routes: Routes = [
         loadChildren: './ng-form/ng-form.module#NgFormModule',
       },
       { path: 'color', loadChildren: './color/color.module#ColorModule' },
+      {
+        path: 'verifier',
+        loadChildren: './verifier/verifier.module#VerifierModule',
+      },
     ],
   },
   // 全屏布局
