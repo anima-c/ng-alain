@@ -1,6 +1,7 @@
 <page-header></page-header>
 
 <nz-card>
-    <h3>随机验证码</h3>
-    <img *ngIf="imgUrl" [src]="imgUrl" alt="" (click)="draw()">
+  <img *ngIf="imgUrl" [src]="imgUrl" alt="">
+  <br><br>
+  <a (click)="draw()">看不清？换一张</a>
 </nz-card>
